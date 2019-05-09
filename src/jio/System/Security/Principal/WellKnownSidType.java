@@ -1,0 +1,75 @@
+package jio.System.Security.Principal;
+
+public enum WellKnownSidType {
+  NullSid(0L),
+  WorldSid(1L),
+  LocalSid(2L),
+  CreatorOwnerSid(3L),
+  CreatorGroupSid(4L),
+  CreatorOwnerServerSid(5L),
+  CreatorGroupServerSid(6L),
+  NTAuthoritySid(7L),
+  DialupSid(8L),
+  NetworkSid(9L),
+  BatchSid(10L),
+  InteractiveSid(11L),
+  ServiceSid(12L),
+  AnonymousSid(13L),
+  ProxySid(14L),
+  EnterpriseControllersSid(15L),
+  SelfSid(16L),
+  AuthenticatedUserSid(17L),
+  RestrictedCodeSid(18L),
+  TerminalServerSid(19L),
+  RemoteLogonIdSid(20L),
+  LogonIdsSid(21L),
+  LocalSystemSid(22L),
+  LocalServiceSid(23L),
+  NetworkServiceSid(24L),
+  BuiltinDomainSid(25L),
+  BuiltinAdministratorsSid(26L),
+  BuiltinUsersSid(27L),
+  BuiltinGuestsSid(28L),
+  BuiltinPowerUsersSid(29L),
+  BuiltinAccountOperatorsSid(30L),
+  BuiltinSystemOperatorsSid(31L),
+  BuiltinPrintOperatorsSid(32L),
+  BuiltinBackupOperatorsSid(33L),
+  BuiltinReplicatorSid(34L),
+  BuiltinPreWindows2000CompatibleAccessSid(35L),
+  BuiltinRemoteDesktopUsersSid(36L),
+  BuiltinNetworkConfigurationOperatorsSid(37L),
+  AccountAdministratorSid(38L),
+  AccountGuestSid(39L),
+  AccountKrbtgtSid(40L),
+  AccountDomainAdminsSid(41L),
+  AccountDomainUsersSid(42L),
+  AccountDomainGuestsSid(43L),
+  AccountComputersSid(44L),
+  AccountControllersSid(45L),
+  AccountCertAdminsSid(46L),
+  AccountSchemaAdminsSid(47L),
+  AccountEnterpriseAdminsSid(48L),
+  AccountPolicyAdminsSid(49L),
+  AccountRasAndIasServersSid(50L),
+  NtlmAuthenticationSid(51L),
+  DigestAuthenticationSid(52L),
+  SChannelAuthenticationSid(53L),
+  ThisOrganizationSid(54L),
+  OtherOrganizationSid(55L),
+  BuiltinIncomingForestTrustBuildersSid(56L),
+  BuiltinPerformanceMonitoringUsersSid(57L),
+  BuiltinPerformanceLoggingUsersSid(58L),
+  BuiltinAuthorizationAccessSid(59L),
+  WinBuiltinTerminalServerLicenseServersSid(60L),
+  ;
+  private long numVal;
+
+  WellKnownSidType(long numVal) {
+    this.numVal = numVal;
+  }
+
+  public long getNumVal() {
+    return numVal;
+  }
+}
